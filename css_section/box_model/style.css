@@ -1,0 +1,30 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: rebeccapurple;
+  background-color: lightblue;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.container {
+  padding: 5px 10px;
+}
+
+.box {
+  width: 200px;
+  min-height: 200px;
+  background-color: darkgoldenrod;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+

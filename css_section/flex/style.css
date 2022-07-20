@@ -1,0 +1,53 @@
+#container{
+  background-color: white;
+  /* width:960px; */
+  border: 2px solid black;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  padding: .25em .5em;
+}
+
+nav {
+  padding: .25em .5em;
+  background-color: darkgoldenrod;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  gap: 1em;
+}
+
+.box{
+  height: 350px;
+  width: 200px;
+  border: 1px solid black;
+  margin: 20px 0px;
+}
+#box-1{
+  background-color: blue;
+}
+#box-2{
+  background-color: white;
+}
+#box-3{
+  background-color: red;
+}
+
+.left-col {
+  /* misbehaving child property!!! */
+  align-self: flex-start;
+  border: solid 2px black;
+}
+
+

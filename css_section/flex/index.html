@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flex Advantage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="flex">
+        <h1>The Flex Advantage</h1>
+        <ul class="flex">
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main class="flex">
+        <div class="left-col">
+            <h2>RULE!!! THE PARENT TELLS THE CHILDREN HOW TO BEHAVE!!</h2>
+            <ol>
+                <li>Identify the elements that must be side-by-side</li>
+                <li>Find their direct common parent</li>
+                <li>If there is no direct common parent, you must create one</li>
+                <li>Apply display: flex to the parent</li>
+                <li>Add the other amigos: justify-content: space-between; align-items: center</li>
+            </ol>
+        </div>
+        <div class="flex" id="container">
+            <div class="box" id="box-1"></div>
+            <div class="box" id="box-2"></div>
+            <div class="box" id="box-3"></div>
+        </div>
+    </main>
+</body>
+
+</html>

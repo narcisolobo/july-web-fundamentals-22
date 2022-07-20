@@ -1,0 +1,7 @@
+h1 {
+  color: rebeccapurple;
+}
+
+h3, ul {
+  display: inline-block;
+}
