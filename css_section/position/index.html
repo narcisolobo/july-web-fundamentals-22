@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Rule #1 of Position: DON'T ABUSE POSITION</h2>
+    <h3>A good time to use position is when an element breaks the plane of another element.</h3>
+    <h3>All values of the position property are relative <em>not just the relative value</em>, it just becomes a question of what they are relative to.</h3>
+    <h1 class="nav">CSS Position</h1>
+    <h3>Position Static</h3>
+    <em>position: static</em>
+    <p>Default value of position.</p>
+    <div class="box"></div>
+    <h3>Position Relative</h3>
+    <em>position: relative</em>
+    <p>Element is positioned relative to its normal position.</p>
+    <div class="box relative"></div>
+    <h3>Position Absolute</h3>
+    <em>position: absolute</em>
+    <p>Element is positioned relative to its closest positioned ancestor.</p>
+    <div class="box center">
+        <div class="circle"></div>
+    </div>
+    <h3>Position Fixed</h3>
+    <em>position: fixed</em>
+    <p>The element is positioned relative to the scroll position.</p>
+    <div class="cookie">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae necessitatibus veniam autem beatae numquam quaerat harum rem impedit! Aliquid perferendis debitis nulla veniam ipsam ut aspernatur dicta eligendi libero temporibus.</p>
+    </div>
+    <h3>Position Sticky</h3>
+    <em>position: sticky</em>
+    <p>The element toggles between relative and fixed.</p>
+</body>
+</html>
