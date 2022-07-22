@@ -54,6 +54,7 @@ function reverseArr(arr) {
     var temp = arr[i];
     arr[i] = arr[arr.length - 1 - i];
     arr[arr.length - 1 - i] = temp;
+    console.log(`i: ${i}, arr: ${arr}`)
   }
   return arr;
 }
