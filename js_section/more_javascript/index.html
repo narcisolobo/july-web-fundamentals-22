@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 onclick="hide(this)">More JavaScript</h1>
+    <h2>More about "this"</h2>
+    <p onclick="hide(this)">Event Listeners - one of them is the "click" event (onclick).</p>
+    <button onclick="clicked(this)">CLICK ME</button>
+    <button onclick="increment(this)">1</button>
+    <h2>LIKES:</h2>
+    <p id="likes">1</p>
+    <button onclick="increment(likes); alert('liked')">CLICK TO LIKE</button>
+    <h3>RULE OF THUMB:</h3>
+    <p>If the element you want to manipulate is ALSO the element with the listener, use the "this" keyword.</p>
+    <p>If the element you want to manipulate is NOT the element with the listener, use the ID of the element you want to manipulate.</p>
+    <h3>LIKE ME: <span id="likeMe1">1</span></h3>
+    <h3>LIKE ME: <span id="likeMe2">1</span></h3>
+    <h3>LIKE ME: <span id="likeMe3">1</span></h3>
+    <h3>LIKE ME: <span id="likeMe4">1</span></h3>
+    <h3>LIKE ME: <span id="likeMe5">1</span></h3>
+    <h3>LIKE ME: <span id="likeMe6">1</span></h3>
+    <button onclick="increment(likeMe1)">CLICK TO LIKE ME</button>
+    <button onclick="increment(likeMe2)">CLICK TO LIKE ME</button>
+    <button onclick="increment(likeMe3)">CLICK TO LIKE ME</button>
+    <button onclick="increment(likeMe4)">CLICK TO LIKE ME</button>
+    <button onclick="increment(likeMe5)">CLICK TO LIKE ME</button>
+    <button onclick="increment(likeMe6)">CLICK TO LIKE ME</button>
+    
+    <select onchange="alert('You picked ' + this.value)">
+        <option value="Ciso">Ciso</option>
+        <option value="Omar">Omar</option>
+        <option value="Dashawn">Dashawn</option>
+    </select>
+
+    <img class="picture" onclick="switchPic(this)" src="./images/izuku.webp" alt="DEKU">
+
+    <script src="./script.js"></script>
+</body>
+</html>
