@@ -91,3 +91,46 @@ console.log(result1);
 
 var result2 = isPal([3, 2, 1, 1, 2, 3]);
 console.log(result2);
+
+// Basic 13 nos 2 and 3:
+
+/* 
+2. Print Odds 1-255
+printOdds1To255()
+Print all odd integers from 1 to 255.
+*/
+
+function printOdds1To255() {
+  for (var i = 0; i <= 255; i+=2) {
+    console.log(i);
+  }
+}
+
+printOdds1To255();
+
+// OR we can use a modulus operator!
+function printOdds1To255Modulus() {
+  for (var i = 0; i <= 255; i++) {
+    if (i % 2 !== 0) {
+      console.log(i);
+    }
+  }
+}
+
+printOdds1To255Modulus();
+
+/* 
+3. Print Ints and Sum 0-255
+printIntsAndSum0To255()
+Print integers from 0 to 255, and with each integer print the sum so far. 
+*/
+
+function printIntsAndSum0To255(){
+  var sum = 0;
+  for (let i = 0; i <=255; i++) {
+    sum += i;
+    console.log(i, sum);
+  }
+}
+
+printIntsAndSum0To255();
