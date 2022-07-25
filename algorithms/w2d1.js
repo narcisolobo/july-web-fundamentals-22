@@ -64,3 +64,35 @@ function magic8Ball(question) {
 }
 
 console.log(magic8Ball('Should I kiss on the second date?'));
+
+/* 
+Modulo or Modulus Operator
+The % operator returns the remainder of division.
+
+15 % 3 = 0
+
+7. Array with Odds
+returnOddsArray1To255()
+Create an array with all the odd integers between 1 and 255 (inclusive).  
+*/
+
+function returnOddsArray1To255() {
+  var oddsArr = [];
+  for (let i = 0; i <= 255; i++) {
+    if (i % 2 == 1) {
+      oddsArr.push(i);
+    }
+  }
+  return oddsArr;
+}
+
+console.log(returnOddsArray1To255());
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 == 0) {
+    console.log(i + ' is a multiple of three.')
+  }
+}
+
+// FizzBuzz Algorithm
+// Print out the numbers 1 to 100. If the number is a multiple of three, print "Fizz" instead of the number. If the number is a multiple of five, print "Buzz" instead of the number. If the number is a multiple of both three and five, print "FizzBuzz" instead of the number.

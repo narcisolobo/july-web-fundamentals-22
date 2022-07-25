@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header {
+  background-color: black;
+  min-height: 50px;
+  color: white;
+}
+
+main {
+  background-color: pink;
+  min-height: 300px;
+}
+
+.left-col {
+  flex: 2;
+  background-color: purple;
+  min-height: 500px;
+}
+
+.right-col {
+  flex: 1;
+  align-self: flex-start;
+  background-color: orange;
+  min-height: 350px;
+}
