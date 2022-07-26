@@ -5,8 +5,31 @@
   box-sizing: border-box;
 }
 
+.text-purple {
+  color: #703aa4;
+}
+
+.p {
+  padding: 1em;
+}
+
+button {
+  padding: 1em;
+  border: 0;
+  color: white;
+}
+
+.shadow {
+  box-shadow: 2px 2px black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
 .container {
-  width: 1000px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -16,10 +39,34 @@
   align-items: center;
   gap: 1em;
 }
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.bg-gray {
+  background-color: grey;
+}
+
+.bg-purple {
+  background-color: #703aa4;
+}
+
+.bg-green {
+  background-color: #51a86f;
+}
 /* utilities end */
 
 /* header start */
 header {
+  border-top: 3px solid #703aa4;
+  background-color: black;
+  color: white;
+  padding: .5rem 0;
+}
+
+header img {
+  width: 30px;
 }
 /* header end */
 
@@ -32,7 +79,17 @@ main {
 }
 
 #bannerImage {
-  width: 750px;
+  width: 600px;
+}
+
+.markers {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.marker {
+  min-height: 5px;
+  flex: 1;
 }
 
 .rotated {
@@ -46,6 +103,18 @@ main {
 
 .feature {
   flex: 1;
+  background-color: white;
+}
+
+.prices {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.old-price {
+  color: grey;
+  text-decoration: line-through;
+  font-size: small;
 }
 
 .feature-image {

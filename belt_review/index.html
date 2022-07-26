@@ -9,9 +9,9 @@
 </head>
 <body>
     <!-- header start -->
-    <header>
+    <header class="mb">
         <div class="container flex">
-            <h1>GamingDojo</h1>
+            <h1>Gaming<span class="text-purple">Dojo</span></h1>
             <div class="header-right flex">
                 <select>
                     <option>Euro €</option>
@@ -27,12 +27,18 @@
     <!-- main start -->
     <main class="container">
         <!-- hero start -->
-        <div class="hero">
+        <div class="hero mb">
             <h5>Highlights</h5>
-            <div class="flex">
-                <img src="./images/chevron-left.png" alt="Previous">
+            <div class="flex mb">
+                <img onclick="prevImage(bannerImage)" src="./images/chevron-left.png" alt="Previous">
                 <img id="bannerImage" src="./images/pixel-ninjas-2.png" alt="Pixel Ninjas 2">
-                <img class="rotated" src="./images/chevron-left.png" alt="Next">
+                <img onclick="nextImage(bannerImage)" class="rotated" src="./images/chevron-left.png" alt="Next">
+            </div>
+            <div class="flex markers mb">
+                <div class="marker bg-gray"></div>
+                <div class="marker bg-purple"></div>
+                <div class="marker bg-gray"></div>
+                <div class="marker bg-gray"></div>
             </div>
         </div>
         <!-- hero end -->
@@ -41,44 +47,56 @@
         <div class="features flex">
             <div class="feature">
                 <img class="feature-image" src="./images/cafe-neko.png" alt="Cafe Neko">
-                <h5>Cafe Neko: Gold Edition</h5>
-                <img class="os-icon" src="./images/windows.png" alt="Windows">
-                <img class="os-icon" src="./images/apple.png" alt="Apple">
-                <div class="flex">
-                    <button>-20%</button>
-                    <div class="prices">
-                        <p class="old-price">€14.98</p>
-                        <p>€10.49</p>
+                <div class="p">
+                    <h5 class="mb">Cafe Neko: Gold Edition</h5>
+                    <div class="mb">
+                        <img class="os-icon" src="./images/windows.png" alt="Windows">
+                        <img class="os-icon" src="./images/apple.png" alt="Apple">
                     </div>
-                    <button>Buy</button>
+                    <div class="flex">
+                        <button class="bg-purple">-20%</button>
+                        <div class="prices">
+                            <p class="old-price">€14.98</p>
+                            <p>€10.49</p>
+                        </div>
+                        <button onclick="increment(cartCount)" class="bg-green shadow">Buy</button>
+                    </div>
                 </div>
             </div>
             <div class="feature">
-                <img class="feature-image" src="./images/cafe-neko.png" alt="Cafe Neko">
-                <h5>Cafe Neko: Gold Edition</h5>
-                <img class="os-icon" src="./images/windows.png" alt="Windows">
-                <img class="os-icon" src="./images/apple.png" alt="Apple">
-                <div class="flex">
-                    <button>-20%</button>
-                    <div class="prices">
-                        <p class="old-price">€14.98</p>
-                        <p>€10.49</p>
+                <img class="feature-image" src="./images/pixel-ninjas-2.png" alt="Pixel Ninjas 2">
+                <div class="p">
+                    <h5 class="mb">Pixel Ninjas 2</h5>
+                    <div class="mb">
+                        <img class="os-icon" src="./images/windows.png" alt="Windows">
+                        <img class="os-icon" src="./images/apple.png" alt="Apple">
                     </div>
-                    <button>Buy</button>
+                    <div class="flex">
+                        <button class="bg-purple">-10%</button>
+                        <div class="prices">
+                            <p class="old-price">€8.19</p>
+                            <p>€7.39</p>
+                        </div>
+                        <button onclick="increment(cartCount)" class="bg-green shadow">Buy</button>
+                    </div>
                 </div>
             </div>
             <div class="feature">
-                <img class="feature-image" src="./images/cafe-neko.png" alt="Cafe Neko">
-                <h5>Cafe Neko: Gold Edition</h5>
-                <img class="os-icon" src="./images/windows.png" alt="Windows">
-                <img class="os-icon" src="./images/apple.png" alt="Apple">
-                <div class="flex">
-                    <button>-20%</button>
-                    <div class="prices">
-                        <p class="old-price">€14.98</p>
-                        <p>€10.49</p>
+                <img class="feature-image" src="./images/stonepunk.png" alt="Stonepunk">
+                <div class="p">
+                    <h5 class="mb">Stonepunk 10000 BCE</h5>
+                    <div class="mb">
+                        <img class="os-icon" src="./images/windows.png" alt="Windows">
+                        <img class="os-icon" src="./images/apple.png" alt="Apple">
+                        <img onclick="alert('This game is supported on Linux')" src="./images/linux.png" alt="Linux" class="os-icon">
                     </div>
-                    <button>Buy</button>
+                    <div class="flex">
+                        <button class="bg-purple">-20%</button>
+                        <div class="prices">
+                            <p>€19.99</p>
+                        </div>
+                        <button onclick="increment(cartCount)" class="bg-green shadow">Buy</button>
+                    </div>
                 </div>
             </div>
         </div>
