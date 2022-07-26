@@ -1,0 +1,63 @@
+/* utilities start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+/* utilities end */
+
+/* header start */
+header {
+}
+/* header end */
+
+/* main start */
+main {
+}
+
+/* hero start */
+.hero {
+}
+
+#bannerImage {
+  width: 750px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+/* hero end */
+
+/* features start */
+.features {
+}
+
+.feature {
+  flex: 1;
+}
+
+.feature-image {
+  width: 100%;
+}
+
+.os-icon {
+  width: 30px;
+}
+
+
+
+/* features end */
+
+/* main end */
