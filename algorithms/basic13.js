@@ -80,7 +80,11 @@ printAverageOfArray(arr)
 Analyze an array’s values and print the average.
 */
 
-
+function printAverageOfArray(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    
+  }
+}
 
 /*
 7. Array with Odds

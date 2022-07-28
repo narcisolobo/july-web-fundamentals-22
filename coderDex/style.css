@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.padded {
+  padding: 1rem;
+}
+
+body {
+  background-color: black;
+}
+
+.centered {
+  text-align: center;
+}
+
+.flexed {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 2;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 100vh;
+  border-left: 3px dashed yellowgreen;
+  border-right: 3px dashed yellowgreen;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  color: greenyellow;
+}
+
+.rounded {
+  border-radius: 1em;
+}
+
+.card {
+  background-color: rgb(37, 37, 37);
+}
+
+.avatar {
+  width: 100%;
+}
