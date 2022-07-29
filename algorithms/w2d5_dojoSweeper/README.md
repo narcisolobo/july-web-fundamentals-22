@@ -63,18 +63,21 @@ h2 {
 ## game.js
 
 ```js
-var theDojo = [ [1, 0, 1, 1, 1, 0, 4, 0, 8, 0],
-                [3, 1, 0, 7, 0, 0, 6, 0, 8, 8],
-                [5, 0, 7, 0, 3, 6, 6, 6, 0, 0],
-                [2, 3, 0, 9, 0, 0, 6, 0, 8, 0],
-                [6, 0, 3, 3, 0, 2, 0, 3, 0, 4],
-                [0, 0, 3, 3, 0, 0, 2, 2, 3, 0],
-                [0, 0, 0, 0, 5, 0, 1, 2, 0, 6],
-                [2, 2, 2, 2, 0, 7, 1, 1, 1, 0],
-                [5, 2, 0, 2, 0, 0, 0, 1, 1, 2],
-                [9, 2, 2, 2, 0, 7, 0, 1, 1, 0] ];
+var theDojo = [
+  [1, 0, 1, 1, 1, 0, 4, 0, 8, 0],
+  [3, 1, 0, 7, 0, 0, 6, 0, 8, 8],
+  [5, 0, 7, 0, 3, 6, 6, 6, 0, 0],
+  [2, 3, 0, 9, 0, 0, 6, 0, 8, 0],
+  [6, 0, 3, 3, 0, 2, 0, 3, 0, 4],
+  [0, 0, 3, 3, 0, 0, 2, 2, 3, 0],
+  [0, 0, 0, 0, 5, 0, 1, 2, 0, 6],
+  [2, 2, 2, 2, 0, 7, 1, 1, 1, 0],
+  [5, 2, 0, 2, 0, 0, 0, 1, 1, 2],
+  [9, 2, 2, 2, 0, 7, 0, 1, 1, 0]
+  ];
+
 var dojoDiv = document.querySelector("#the-dojo");
-    
+
 // Creates the rows of buttons for this game
 function render(theDojo) {
   var result = "";
@@ -85,15 +88,16 @@ function render(theDojo) {
   }
   return result;
 }
-    
+
 // TODO - Make this function tell us how many ninjas are hiding 
 //        under the adjacent (all sides and corners) squares.
 //        Use i and j as the indexes to check theDojo.
+
 function howMany(i, j, element) {
   console.log({i, j});
   alert("TODO - determine how many ninjas are hiding in adjacent squares");
 }
-    
+
 // BONUS CHALLENGES
 // 1. draw the number onto the button instead of alerting it
 // 2. at the start randomly place 10 ninjas into theDojo with at most 1 on each spot
